@@ -1,0 +1,111 @@
+/* Theme of Summary Block */
+.pdsa-summary-block-primary{
+    background-color: rgb(235, 125, 35) ;
+    color: #fff; 
+}
+
+.pdsa-summary-block-primary .summary-footer{
+    background-color :  rgb(23, 33, 122);
+    color: #fff; 
+}
+
+.pdsa-summary-block-primary .summary-footer a{
+    color :white;        
+}
+
+.pdsa-summary-block-success{
+    background-color: rgb(6, 248, 115) ;
+    color: #fff; 
+}
+
+.pdsa-summary-block-success .summary-footer{
+    background-color :  rgb(34, 165, 7);
+    color: #fff; 
+}
+
+.pdsa-summary-block-success .summary-footer a{
+    color :white;        
+}
+
+.pdsa-summary-block-info{
+    background-color: rgb(199, 123, 243) ;
+    color: #fff; 
+}
+
+.pdsa-summary-block-info .summary-footer{
+    background-color :  rgb(8, 183, 252);
+    color: #fff; 
+}
+
+.pdsa-summary-block-info .summary-footer a{
+    color :white;        
+}
+
+
+.pdsa-summary-block-danger{
+    background-color: #d3f803;
+    color: #fff; 
+}
+
+.pdsa-summary-block-danger .summary-footer{
+    background-color : rgb(240, 6, 64);
+    color: #fff; 
+}
+
+.pdsa-summary-block-danger .summary-footer a{
+    color :white;        
+}
+
+/* Structure of summary Block */
+.pdsa-summary-block{
+    position:relative;
+    width: 100%;
+    margin: 0.3em;
+    padding: 1em;
+    min-height: 15em;
+       
+}
+
+.pdsa-summary-block .summary-background i,
+.pdsa-summary-block .summary-background div{
+    margin-left: -0.4em;
+    margin-top: 0.1em;
+    font-size: 8em;
+    opacity:1;
+}
+
+.pdsa-summary-block .summary-body  {
+    position: absolute;
+    top: 1.3em;
+    right: 0.8em;        
+}
+
+.pdsa-summary-block .summary-body .summary-line-1{
+    text-align: right;
+    font-size: xx-large;
+}
+
+.pdsa-summary-block .summary-body .summary-line-2{
+    text-align: right;
+    font-size: medium;
+}
+
+.pdsa-summary-block .summary-footer{
+    position: absolute;
+    bottom: 0em;
+    right: 0em;
+    width: 100%;
+    padding: 0.4em;
+    font-weight:300;
+    text-transform: uppercase;
+    font-size: small;
+    opacity: 0.6;
+}
+
+.pdsa-summary-block .summary-footer a{
+    text-decoration: none;
+}
+
+.pdsa-summary-block .summary-footer:hover{        
+    opacity : 5;
+}

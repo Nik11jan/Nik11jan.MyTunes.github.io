@@ -182,31 +182,37 @@
   <!-- *** END: Scripts *** -->
 
   <script>
+    // Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //
+    var checkOptions ={
+      id: "",
+      checkedGlyph: "glyphicon-ok-circle",
+      uncheckedGlyph: "glyphicon-unchecked",
+      checkedBtnClass: "btn-success",
+      uncheckedBtnClass: "btn-primary",
+      checkedText: "selected",
+      uncheckedText: "Not Selected",
+    };
+    // Code for Creating JavaScript Objects for More Generic Code ENDS !!! //
+
     $(document).ready(function () {
       $("#songSelect .btn").on('click', function () {
         ToggleRadioButtons("#songSelect", $(this));
       });
       $("[type='checkbox']").on('change',function () {
+// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //        
                 if ($(this).prop('checked')) {
-                    $(this).prev()
-                    .removeClass('glyphicon-unchecked')
-                    .addClass('glyphicon-ok-circle');
-					 $(this).parent()
-					.removeClass("btn-primary") 
-					.addClass("btn-success");
-					$(this).next().text("Selected")
+                 setChecked($(this));
 					 
                  } 
                 else{ 
-                    $(this).prev()                    
-                    .removeClass('glyphicon-ok-circle')
-                    .addClass('glyphicon-unchecked');  
-					 $(this).parent()
-					.removeClass("btn-success") 
-					.addClass("btn-primary");
-					$(this).next().text("Selected")
+                  setUnChecked($(this));
+// Code for Creating JavaScript Objects for More Generic Code ENDS!!!!  //                  
                 }
             });
+
+// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //                    
+var checked = $(checkedOptions.id + ".btn-group input:checked")
+// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //        
 
             $("input:checked").prev()
                 .removeClass('glyphicon-unchecked')
@@ -215,7 +221,29 @@
                 .addClass('active')
     });  
 
+// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //
+    function setChecked(ct1)
+    {
+      $(ct1).prev()
+          .removeClass(checkOptions.uncheckedGlyph)
+          .addClass(checkOptions.checkedGlyph);
+      $(ct1).parent()
+          .removeClass(checkOptions.uncheckedBtnClass) 
+          .addClass(checkOptions.checkedBtnClass);
+      $(ct1).next().text(checkOptions.checkedText)
+    }
 
+    function setUnChecked(ct1)
+    {
+      $(ct1).prev()
+          .removeClass(checkOptions.checkedGlyph)
+          .addClass(checkOptions.uncheckedGlyph);
+      $(ct1).parent()
+          .removeClass(checkOptions.checkedBtnClass) 
+          .addClass(checkOptions.uncheckedBtnClass);
+      $(ct1).next().text(checkOptions.uncheckedText)
+    }
+// Code for Creating JavaScript Objects for More Generic Code ENDS!!!!  //
 
     function ToggleRadioButtons(groupName, current) {
       $(groupName + " .glyphicon-record")

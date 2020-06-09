@@ -33,6 +33,13 @@
       padding-top:0.5em;
       padding-bottom: 0em;
     }
+
+    .total-area{
+      margin-top: 2em;
+    font-weight:  bold;
+    text-align:   right;
+    }
+
   </style>
 </head>
 <body class="notransition">
@@ -150,20 +157,30 @@
 
       </div>
     </div>
-   
+
     <div class="row">
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-sm-6">
+        <h3>Select Albums to Purchase</h3>
+      </div>
+      <div class="col-sm-5 total-area">
+        <span>Total:</span>
+        <span id="total">$0.00</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
         <div class="panel panel-warning">
           <div class="panel-body">
               <span class= "title">Southern Style</span>
               <span class= "desc">Darius Rucker</span>
               <span class= "Price">$10.00</span>
           </div>
-          <div class="panel-footer">
+          <div class="panel-footer text-center">
             <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-success active">
                 <span class="glyphicon glyphicon-ok-circle"></span>
-                <input type="checkbox" id= "chk1" name="products" checked="checked" />
+                <input id="chk1" type="checkbox" name="products" checked="checked" />
                 <label for="chk1">Selected</label>
               </label>
             </div>
@@ -171,7 +188,111 @@
         </div>
       </div>
 
-    </div>
+    
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+          <div class="panel-body">
+              <span class= "title">Based On a True Story</span>
+              <span class= "desc">Blake Shelton</span>
+              <span class= "Price">$13.00</span>
+          </div>
+          <div class="panel-footer text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary">
+                <span class="glyphicon glyphicon-unchecked"></span>
+                <input id="chk2" type="checkbox" name="products" />
+                <label for="chk2">Not Selected</label>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+          <div class="panel-body">
+            <span class="title">Tom Cat</span>
+            <span class="desc">Tom Scott &amp; the L.A. Express</span>
+            <span class="price">$7.00</span>
+          </div>
+          <div class="panel-footer text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary">
+                <span class="glyphicon glyphicon-unchecked"></span>
+                <input id="chk2" type="checkbox" name="products" />
+                <label for="chk2">Not Selected</label>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+          <div class="panel-body">
+            <span class="title">The Best of Richard Elliot</span>
+            <span class="desc">Richard Elliot</span>
+            <span class="price">$12.00</span>
+          </div>
+          <div class="panel-footer text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary">
+                <span class="glyphicon glyphicon-unchecked"></span>
+                <input id="chk3" type="checkbox" name="products" />
+                <label for="chk3">Not Selected</label>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+          <div class="panel-body">
+            <span class="title">Drunk Enough to Dance</span>
+            <span class="desc">Bowling for Soup</span>
+            <span class="price">$9.00</span>
+          </div>
+          <div class="panel-footer text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary">
+                <span class="glyphicon glyphicon-unchecked"></span>
+                <input id="chk3" type="checkbox" name="products" />
+                <label for="chk3">Not Selected</label>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+          <div class="panel-body">
+            <span class="title">Back In Black</span>
+            <span class="desc">AC/DC</span>
+            <span class="price">$11.00</span>
+          </div>
+          <div class="panel-footer text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary">
+                <span class="glyphicon glyphicon-unchecked"></span>
+                <input id="chk3" type="checkbox" name="products" />
+                <label for="chk3">Not Selected</label>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    
 
   </div>
   <!-- *** END: Body Content *** -->

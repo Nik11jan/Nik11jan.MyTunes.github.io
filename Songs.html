@@ -9,39 +9,13 @@
   <link href="Content/pdsa-sidebar.css" rel="stylesheet" />
   <link href="Content/pdsa-summary-block.css" rel="stylesheet" />
   <link href="Content/pdsa-readme-box.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Content\pdsa-product-selector.css">
+  
   <!-- *** END: Styles *** -->
 
-  <style>
-    
-    .title{
-      display: block;
-      font-weight: bold;
-      font-size: 1.5em;
-    }
-    .desc{
-      display:block;
-      font-size: 1.25em;
-    }
-    .price{
-      font-size: 1.25em;
-    }
-    .panel-body{
-      min-height: 7em;
-    }
-    .btn-group .btn span,
-    .btn-group .btn input[type='checkbox'] {
-      padding-top:0.5em;
-      padding-bottom: 0em;
-    }
-
-    .total-area{
-      margin-top: 2em;
-    font-weight:  bold;
-    text-align:   right;
-    }
-
-  </style>
+  
 </head>
+
 <body class="notransition">
   <div class="container">
     <!-- *** BEGIN: Header Area *** -->
@@ -134,6 +108,9 @@
 
   <!-- *** BEGIN: Body Content *** -->
   <div class="container body-content">
+
+
+
     <div class="row">
       <div class="text-center col-xs-12">
         <h3>Display....</h3>
@@ -166,130 +143,131 @@
         <span>Total:</span>
         <span id="total">$0.00</span>
       </div>
-    </div>
+    </div>    
+
 
     <div class="row">
-      <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-              <span class= "title">Southern Style</span>
-              <span class= "desc">Darius Rucker</span>
-              <span class= "Price">$10.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-success active">
-                <span class="glyphicon glyphicon-ok-circle"></span>
-                <input id="chk1" type="checkbox" name="products" checked="checked" />
-                <label for="chk1">Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="col-sm-4">
+		 <div class="panel panel-warning">
+		   <div class="panel-body">
+		    <span class= "title">Southern Style</span>
+		    <span class= "desc">Darius Rucker</span>
+		    <span class= "price">$10.00</span>
+		   </div>
+		   <div class="panel-footer text-center">
+		    <div class="btn-group" data-toggle="buttons">
+		      <label class="btn btn-success active">
+		         <span class="glyphicon glyphicon-ok-circle"></span>
+		         <input id="chk1" type="checkbox" name="products" checked="checked" />
+		         <label for="chk1">Selected</label>
+		      </label>
+		    </div>
+		   </div>
+		 </div>
+		</div>
 
     
-    <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-              <span class= "title">Based On a True Story</span>
-              <span class= "desc">Blake Shelton</span>
-              <span class= "Price">$13.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <span class="glyphicon glyphicon-unchecked"></span>
-                <input id="chk2" type="checkbox" name="products" />
-                <label for="chk2">Not Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>    
+		<div class="col-sm-4">
+			<div class="panel panel-warning">
+				<div class="panel-body">
+					<span class= "title">Based On a True Story</span>
+					<span class= "desc">Blake Shelton</span>
+					<span class= "price">$13.00</span>
+				</div>
+				<div class="panel-footer text-center">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary">
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input id="chk2" type="checkbox" name="products" />
+							<label for="chk2">Not Selected</label>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>    
 
 
-    <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-            <span class="title">Tom Cat</span>
-            <span class="desc">Tom Scott &amp; the L.A. Express</span>
-            <span class="price">$7.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <span class="glyphicon glyphicon-unchecked"></span>
-                <input id="chk2" type="checkbox" name="products" />
-                <label for="chk2">Not Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-    <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-            <span class="title">The Best of Richard Elliot</span>
-            <span class="desc">Richard Elliot</span>
-            <span class="price">$12.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <span class="glyphicon glyphicon-unchecked"></span>
-                <input id="chk3" type="checkbox" name="products" />
-                <label for="chk3">Not Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="col-sm-4">
+			<div class="panel panel-warning">
+				<div class="panel-body">
+					<span class="title">Tom Cat</span>
+					<span class="desc">Tom Scott &amp; the L.A. Express</span>
+					<span class="price">$7.00</span>
+				</div>
+				<div class="panel-footer text-center">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary">
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input id="chk2" type="checkbox" name="products" />
+							<label for="chk2">Not Selected</label>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
-    <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-            <span class="title">Drunk Enough to Dance</span>
-            <span class="desc">Bowling for Soup</span>
-            <span class="price">$9.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <span class="glyphicon glyphicon-unchecked"></span>
-                <input id="chk3" type="checkbox" name="products" />
-                <label for="chk3">Not Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="col-sm-4">
+			<div class="panel panel-warning">
+				<div class="panel-body">
+					<span class="title">The Best of Richard Elliot</span>
+					<span class="desc">Richard Elliot</span>
+					<span class="price">$12.00</span>
+				</div>
+				<div class="panel-footer text-center">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary">
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input id="chk3" type="checkbox" name="products" />
+							<label for="chk3">Not Selected</label>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="col-sm-4">
+			<div class="panel panel-warning">
+				<div class="panel-body">
+					<span class="title">Drunk Enough to Dance</span>
+					<span class="desc">Bowling for Soup</span>
+					<span class="price">$9.00</span>
+				</div>
+				<div class="panel-footer text-center">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary">
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input id="chk3" type="checkbox" name="products" />
+							<label for="chk3">Not Selected</label>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
 
     
 
-    <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-body">
-            <span class="title">Back In Black</span>
-            <span class="desc">AC/DC</span>
-            <span class="price">$11.00</span>
-          </div>
-          <div class="panel-footer text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <span class="glyphicon glyphicon-unchecked"></span>
-                <input id="chk3" type="checkbox" name="products" />
-                <label for="chk3">Not Selected</label>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="col-sm-4">
+			<div class="panel panel-warning">
+				<div class="panel-body">
+					<span class="title">Back In Black</span>
+					<span class="desc">AC/DC</span>
+					<span class="price">$11.00</span>
+				</div>
+				<div class="panel-footer text-center">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary">
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input id="chk3" type="checkbox" name="products" />
+							<label for="chk3">Not Selected</label>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
     
@@ -299,7 +277,10 @@
   <!-- *** BEGIN: Scripts *** -->
   <script src="Scripts/jquery-1.11.0.min.js"></script>
   <script src="Scripts/bootstrap.min.js"></script>
+  <script src ="Scripts/pdsa-numberformat.js"></script>
   <script src="Scripts/pdsa-common.js"></script>
+  <script src="Scripts\pdsa-product-selector.js"></script>
+  
   <!-- *** END: Scripts *** -->
 
   <script>
@@ -311,7 +292,7 @@
       checkedBtnClass: "btn-success",
       uncheckedBtnClass: "btn-primary",
       checkedText: "selected",
-      uncheckedText: "Not Selected",
+      uncheckedText: "Not Selected"
     };
     // Code for Creating JavaScript Objects for More Generic Code ENDS !!! //
 
@@ -319,21 +300,6 @@
       $("#songSelect .btn").on('click', function () {
         ToggleRadioButtons("#songSelect", $(this));
       });
-      $("[type='checkbox']").on('change',function () {
-// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //        
-                if ($(this).prop('checked')) {
-                 setChecked($(this));
-					 
-                 } 
-                else{ 
-                  setUnChecked($(this));
-// Code for Creating JavaScript Objects for More Generic Code ENDS!!!!  //                  
-                }
-            });
-
-// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //                    
-var checked = $(checkedOptions.id + ".btn-group input:checked")
-// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //        
 
             $("input:checked").prev()
                 .removeClass('glyphicon-unchecked')
@@ -341,30 +307,6 @@ var checked = $(checkedOptions.id + ".btn-group input:checked")
             $("input:checked").parent()
                 .addClass('active')
     });  
-
-// Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //
-    function setChecked(ct1)
-    {
-      $(ct1).prev()
-          .removeClass(checkOptions.uncheckedGlyph)
-          .addClass(checkOptions.checkedGlyph);
-      $(ct1).parent()
-          .removeClass(checkOptions.uncheckedBtnClass) 
-          .addClass(checkOptions.checkedBtnClass);
-      $(ct1).next().text(checkOptions.checkedText)
-    }
-
-    function setUnChecked(ct1)
-    {
-      $(ct1).prev()
-          .removeClass(checkOptions.checkedGlyph)
-          .addClass(checkOptions.uncheckedGlyph);
-      $(ct1).parent()
-          .removeClass(checkOptions.checkedBtnClass) 
-          .addClass(checkOptions.uncheckedBtnClass);
-      $(ct1).next().text(checkOptions.uncheckedText)
-    }
-// Code for Creating JavaScript Objects for More Generic Code ENDS!!!!  //
 
     function ToggleRadioButtons(groupName, current) {
       $(groupName + " .glyphicon-record")
@@ -375,7 +317,11 @@ var checked = $(checkedOptions.id + ".btn-group input:checked")
       .removeClass("glyphicon-unchecked")
       .addClass("glyphicon-record");
     }
+
+
   </script>
+
+
 </body>
 </html>
     

@@ -6,10 +6,10 @@
   <!-- *** BEGIN: Styles *** -->
   <link href="Content/bootstrap.min.css" rel="stylesheet" />
   <link href="Content/Site.css" rel="stylesheet" />
-  <link href="Content/pdsa-sidebar.css" rel="stylesheet" />
+  <link href="Content\pdsa-sidebar_neeraj.css" rel="stylesheet" />
   <link href="Content/pdsa-summary-block.css" rel="stylesheet" />
   <link href="Content/pdsa-readme-box.css" rel="stylesheet" />
-  <link rel="stylesheet" href="Content\pdsa-product-selector.css">
+  <link  href="Content\pdsa-product-selector.css" rel="stylesheet" />
   
   <!-- *** END: Styles *** -->
 
@@ -108,7 +108,15 @@
 
   <!-- *** BEGIN: Body Content *** -->
   <div class="container body-content">
-
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Select Albums to Purchase</h3>
+      </div>
+      <div class="col-sm-5 total-area">
+        <span>Total:</span>
+        <span id="total">$0.00</span>
+      </div>
+    </div>
 
 
     <div class="row">
@@ -135,15 +143,7 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-6">
-        <h3>Select Albums to Purchase</h3>
-      </div>
-      <div class="col-sm-5 total-area">
-        <span>Total:</span>
-        <span id="total">$0.00</span>
-      </div>
-    </div>    
+    
 
 
     <div class="row">
@@ -205,7 +205,8 @@
 				</div>
 			</div>
 		</div>
-
+  </div>
+  <div class="row">
 
 
 		<div class="col-sm-4">
@@ -268,7 +269,7 @@
 				</div>
 			</div>
 		</div>
-
+  </div>
 
     
 
@@ -277,35 +278,21 @@
   <!-- *** BEGIN: Scripts *** -->
   <script src="Scripts/jquery-1.11.0.min.js"></script>
   <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts\pdsa-product-selector.js"></script>
   <script src ="Scripts/pdsa-numberformat.js"></script>
   <script src="Scripts/pdsa-common.js"></script>
-  <script src="Scripts\pdsa-product-selector.js"></script>
+ 
   
   <!-- *** END: Scripts *** -->
 
   <script>
-    // Code for Creating JavaScript Objects for More Generic Code STARTS!!!!  //
-    var checkOptions ={
-      id: "",
-      checkedGlyph: "glyphicon-ok-circle",
-      uncheckedGlyph: "glyphicon-unchecked",
-      checkedBtnClass: "btn-success",
-      uncheckedBtnClass: "btn-primary",
-      checkedText: "selected",
-      uncheckedText: "Not Selected"
-    };
-    // Code for Creating JavaScript Objects for More Generic Code ENDS !!! //
+
 
     $(document).ready(function () {
       $("#songSelect .btn").on('click', function () {
         ToggleRadioButtons("#songSelect", $(this));
       });
 
-            $("input:checked").prev()
-                .removeClass('glyphicon-unchecked')
-                .addClass('glyphicon-ok-circle');
-            $("input:checked").parent()
-                .addClass('active')
     });  
 
     function ToggleRadioButtons(groupName, current) {
